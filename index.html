@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--PreLoad Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Convert - Conversor de Moeda</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="img/logo.svg" alt="Logomarca">
+
+    <main>
+        <form>
+            <label for="amount">valor</label>
+            <input type="text" name="amount" id="amount" placeholder="0" required>
+
+            <label for="currency">Moeda</label>
+            <select name="currency" id="currency" required>
+                <option value="" disabled selected hidden>Selecione a moeda</option>
+                <option value="USD">Dólar Americano</option>
+                <option value="EUR">Euro</option>
+                <option value="JPY">Iene Japonês</option>
+                <option value="ARS">Peso Argentino</option>
+                <option value="CNY">Yuan chinês</option>
+            </select>
+
+            <button type="submit">Converter em reais</button>
+        </form>
+
+        <footer>
+            <span id="description">US$ 1 = R$ 5,66</span>
+            <h1 id="result">5,66 Reais</h1>
+        </footer>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
